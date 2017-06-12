@@ -1,9 +1,37 @@
+# stupid OSX files
 .DS_Store
-Berksfile.lock
-Gemfile.lock
-.vagrant
-cookbooks/
-data_bags/
-*.sw[op]
-VERSION
-/.project
+
+# gem files
+.rake_test_cache
+vendor/*
+.bundle/*
+
+# Ignore Chef key files and secrets
+.chef/*.pem
+.chef/encrypted_data_bag_secret
+
+# ignore .kitchen files
+.kitchen
+
+# Ignore vendored cookbooks
+berks-cookbooks/*
+# Ignore graphs created by `berks viz`
+graph.png
+
+# emacs
+*~
+
+# vim
+*.sw[a-z]
+
+# subversion
+*/.svn/*
+
+# Ignore private keys and CSRs
+certificates/*.key
+certificates/*.csr
+
+encrypted_data_bag_secret
+
+# log files and such
+.kitchen

@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 include_recipe "nexus::_common_system"
-include_recipe "nginx"
+include_recipe "chef_nginx"
 
 directory "#{node[:nginx][:dir]}/shared/certificates" do
   owner     "root"
@@ -88,6 +88,6 @@ end
 nginx_site 'nexus_proxy.conf'
 
 # Remove nginx default site
-nginx_site "default" do
+chef_nginx_site "default" do
   enable false
 end

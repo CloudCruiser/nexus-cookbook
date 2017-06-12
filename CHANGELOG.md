@@ -1,3 +1,9 @@
+## v.3.4.0
+
+* CloudCruiser fork branch.
+* User chef_nginx cookbook version 6.1.x instead of nginx cookbook
+
+
 ## v.3.3.0
 
 * [#64](https://github.com/RiotGames/nexus-cookbook/issues/64) Add a feature to allow for the usage of Chef Vault
