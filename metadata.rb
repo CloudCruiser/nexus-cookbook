@@ -4,7 +4,7 @@ maintainer_email "ccops@hpe.com"
 license          "Apache 2.0"
 description      "Installs/Configures nexus"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          "3.4.0"
+version          "3.4.1"
 
 %w{ ubuntu centos }.each do |os|
   supports os

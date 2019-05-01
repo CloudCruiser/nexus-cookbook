@@ -37,6 +37,10 @@ artifact_deploy node[:nexus][:name] do
       action :stop
       only_if do File.exist?("/etc/init.d/nexus") end
     end
+
+    execute "Fix tar file permissions" do
+      command "find #{Chef::Config[:file_cache_path]} -type f -name '*.tar.gz' | xargs chmod 644"
+    end
   }
 
   before_symlink Proc.new {
