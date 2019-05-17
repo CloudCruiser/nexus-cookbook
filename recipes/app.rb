@@ -20,7 +20,7 @@
 include_recipe "nexus::_common_system"
 include_recipe "java"
 
-artifact_deploy node[:nexus][:name] do
+deploy node[:nexus][:name] do
   version           node[:nexus][:version]
   artifact_location node[:nexus][:url]
   artifact_checksum node[:nexus][:checksum]
