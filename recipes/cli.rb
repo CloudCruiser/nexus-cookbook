@@ -19,4 +19,5 @@
 #
 chef_gem "nexus_cli" do
   version "4.1.0"
+  compile_time true
 end
