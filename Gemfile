@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem 'berkshelf', '~> 5.1'
+gem 'berkshelf', '~> 5.6', '>= 5.6.5'
 gem 'bundler', '~> 1.13'
 gem 'chef', '~> 12.8.1'
 gem 'chefspec', '~> 4.7'
@@ -12,4 +12,4 @@ gem 'ruby-lint', '~> 2.3'
 gem 'semver2', '~> 3.4.2'
 gem 'serverspec', '~> 2.36.1'
 gem 'test-kitchen', '~> 1.16.0'
-gem 'kitchen-dokken', '~> 2.1.2'
+gem 'kitchen-dokken', '~> 2.1.8'
