@@ -2,8 +2,8 @@ source "http://rubygems.org"
 
 gem 'berkshelf', '~> 5.1'
 gem 'bundler', '~> 1.13'
-gem 'chef', '~> 12.8.1'
-gem 'chefspec', '~> 4.7'
+gem 'chef', '~> 16.0.257'
+gem 'chefspec', '~> 4.7', '>= 4.7.0'
 gem 'foodcritic', '~> 7.1'
 gem 'kitchen-docker', '~> 2.5'
 gem 'kitchen-vagrant', '~> 0.20.0'
